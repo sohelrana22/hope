@@ -1,0 +1,66 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+
+/* Tailwind Utility */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Raleway, sans-serif;
+}
+
+/* Button Customization */
+.btn {
+  @apply text-base cursor-pointer focus:outline-none px-5 py-2;
+}
+
+.btn-primary {
+  @apply text-cyan-500 hover:text-white m-3 bg-transparent border border-cyan-500 hover:bg-cyan-500 shadow-cyan-300 shadow-sm hover:shadow-lg hover:shadow-cyan-300 focus:ring-1 focus:ring-cyan-500 transition duration-200 ease-in-out;
+}
+
+.btn-danger {
+  @apply text-red-600 hover:text-white m-3 bg-transparent  focus:ring-1 focus:ring-red-500 border border-red-500 hover:bg-red-600 shadow-red-300 shadow hover:shadow-lg hover:shadow-red-400 transition duration-200 ease-in-out;
+}
+
+/* Custom Media Queries */
+.my-container {
+  @apply w-full mx-auto px-10 py-14 text-center;
+}
+
+.input-field {
+  @apply h-10 w-full border-b-2 text-left border-gray-400 text-gray-500 focus:text-cyan-600 placeholder:text-gray-400 focus:placeholder:text-cyan-600 focus:outline-none focus:border-cyan-500 focus:ring-0 border-0;
+}
+
+@media (min-width: 576px) {
+  .my-container {
+    max-width: 540px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .my-container {
+    max-width: 720px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .my-container {
+    max-width: 970px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .my-container {
+    max-width: 1170px !important;
+  }
+  .userImg {
+    display: block;
+  }
+}
+
+@media (min-width: 1400px) {
+  .my-container {
+    max-width: 1320px !important;
+  }
+}

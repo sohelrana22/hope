@@ -1,0 +1,17 @@
+.map{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+h1{
+   font-size: larger;
+    font-weight: 900;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    line-height: normal;
+    text-transform: none;
+    color: #2d2d29;
+}
